@@ -1,23 +1,90 @@
 aid: bancorprotocol
+
 name: Bancorprotocol
-description: 'Bancorprotocol is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+image: https://framerusercontent.com/assets/Ge6tkw9lQSaRvH2tTNsL5262xQ.png
+
+description: Bancorprotocol is a decentralized finance protocol that provides on‑chain liquidity, automated market making, and token conversion
+  across multiple blockchains. Founded in 2017, Bancor enables users to trade assets instantly without order books, offering features like single‑sided
+  liquidity provision, impermanent loss protection, and a suite of tools for developers to integrate on‑chain market infrastructure into their
+  applications.
+
 url: https://raw.githubusercontent.com/api-evangelist/bancorprotocol/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-27 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-27'
+
 modified: '2026-09-27'
+
 tags:
-- Company
-apis: []
+- Decentralized Finance
+- Liquidity
+- Automated Market Maker
+- Blockchain
+- Token Conversion
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Conventions
+  url: conventions/bancorprotocol-conventions.yml
+- type: LLMsTxt
+  url: llms/bancorprotocol-llms.txt
+- type: WellKnown
+  url: well-known/bancorprotocol-well-known.yml
+- type: Hosts
+  url: hosts/bancorprotocol-hosts.yml
+- type: Vendors
+  url: vendors/bancorprotocol-vendors.yml
+- type: Security
+  url: https://support.bancor.network/resources/security
+- type: DomainSecurity
+  url: security/bancorprotocol-domain-security.yml
 - type: Website
-  url: https://equityzen.com/company/bancorprotocol
+  url: https://bancor.network
+- type: Documentation
+  url: https://docs.bancor.network
+- type: APIReference
+  url: https://docs.bancor.network/guides/rest-api
+- type: GettingStarted
+  url: https://docs.bancor.network/about-bancor-network/bancor-v3.md
+- type: Support
+  url: https://support.bancor.network
+- type: Blog
+  url: https://blog.bancor.network
+- type: GitHubOrganization
+  url: https://github.com/bancorprotocol
+
+apis:
+- name: Bancor Network REST API
+  description: The Bancor Network REST API provides JSON endpoints for token, price, and pool information.
+  humanURL: https://docs.bancor.network/guides/rest-api
+  baseURL: null
+  aid: bancorprotocol:bancor-network-rest-api
+
+x-coverage:
+  state: unreadable
+  reason: no-machine-readable-spec
+  detail: Documentation is available as markdown but no OpenAPI, GraphQL, AsyncAPI, or other machine‑readable contract was found.
+  evidence:
+  - url: https://docs.bancor.network/guides/rest-api
+    status: 200
+  checked: '2026-09-27'
+x-enrichment:
+  date: '2026-09-27'
+  status: enriched
+  artifacts_added: 10
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

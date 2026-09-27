@@ -1,0 +1,13 @@
+generated: '2026-09-27'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://docs.bancor.network/about-bancor-network/resources-for-daos/token-whitelisting-requirements.md
+sources:
+- https://docs.bancor.network/about-bancor-network/resources-for-daos/token-whitelisting-requirements.md
+- https://docs.bancor.network/developer-guides/read-functions/pool-token-information.md
+- https://docs.bancor.network/developer-guides/read-functions/pool-token-information/pooltoken.md
+- https://docs.bancor.network/developer-guides/read-functions/pool-token-information/collectionbypool.md
+idempotency:
+  coverage: na
+pagination: {}
+docs: https://docs.bancor.network/about-bancor-network/resources-for-daos/token-whitelisting-requirements.md

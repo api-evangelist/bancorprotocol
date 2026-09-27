@@ -1,0 +1,119 @@
+generated: '2026-09-27'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 8
+  own: 7
+  other_domain: 0
+  platform: 1
+  roles:
+  - api
+  - docs
+  - marketing
+  - other
+  - source
+  - support
+  - website
+hosts:
+- host: api.bancor.network
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: bancor.network
+  role: api
+  relation: own
+- host: app.bancor.network
+  found_by:
+  - probed
+  - site-links
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: bancor.network
+  role: other
+  relation: own
+- host: bancor.network
+  found_by:
+  - pointer
+  - probed
+  - contract-discovery
+  - well-known
+  - vendor-detect
+  types:
+  - Website
+  serves:
+  - cdn
+  vendor: cloudflare
+  registrable_domain: bancor.network
+  role: website
+  relation: own
+- host: blog.bancor.network
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types:
+  - Blog
+  serves: []
+  registrable_domain: bancor.network
+  role: marketing
+  relation: own
+- host: docs.bancor.network
+  found_by:
+  - pointer
+  - apis[]
+  - probed
+  - site-links
+  - docs-index
+  - contract-discovery
+  - well-known
+  - vendor-detect
+  types:
+  - Documentation
+  - APIReference
+  - GettingStarted
+  serves:
+  - docs
+  - documentation
+  - hosting
+  vendor: gitbook
+  registrable_domain: bancor.network
+  role: docs
+  relation: own
+- host: github.com
+  found_by:
+  - pointer
+  types:
+  - GitHubOrganization
+  serves: []
+  registrable_domain: github.com
+  role: source
+  relation: platform
+- host: gov.bancor.network
+  found_by:
+  - probed
+  - site-links
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: bancor.network
+  role: other
+  relation: own
+- host: support.bancor.network
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types:
+  - Security
+  - Support
+  serves: []
+  registrable_domain: bancor.network
+  role: support
+  relation: own

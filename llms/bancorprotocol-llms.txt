@@ -1,0 +1,161 @@
+# Bancor V3 Technical Docs
+
+## Bancor V3 Technical Docs
+
+- [Bancor V3](https://docs.bancor.network/about-bancor-network/bancor-v3.md)
+- [Bancor Basics](https://docs.bancor.network/about-bancor-network/faqs.md): Frequently asked questions about Bancor Protocol
+- [About Bancor](https://docs.bancor.network/about-bancor-network/faqs/master.md): Bancor is the best DeFi staking protocol for passive income.
+- [What Can I Do With Bancor?](https://docs.bancor.network/about-bancor-network/faqs/what-can-i-do-with-bancor.md)
+- [Liquidity Pools](https://docs.bancor.network/about-bancor-network/faqs/liquidity-pools.md)
+- [Single-Side Liquidity](https://docs.bancor.network/about-bancor-network/faqs/single-side-liquidity.md): Bancor supports Single-Sided Staking for any listed asset.
+- [Why Use Bancor?](https://docs.bancor.network/about-bancor-network/faqs/why-use-bancor.md)
+- [Resources](https://docs.bancor.network/about-bancor-network/faqs/resources.md): Learn about Bancor, use the protocol and engage with the community
+- [Resources for DAOs](https://docs.bancor.network/about-bancor-network/resources-for-daos.md)
+- [Token Whitelisting Requirements](https://docs.bancor.network/about-bancor-network/resources-for-daos/token-whitelisting-requirements.md)
+- [Liquidity Mining](https://docs.bancor.network/about-bancor-network/resources-for-daos/liquidity-mining.md)
+- [Auto Compounding Rewards](https://docs.bancor.network/about-bancor-network/resources-for-daos/liquidity-mining/auto-compounding-rewards.md)
+- [How Auto Compounding Rewards work](https://docs.bancor.network/about-bancor-network/resources-for-daos/liquidity-mining/auto-compounding-rewards/how-auto-compounding-rewards-work.md)
+- [How to Create an Auto Compounding Rewards Program](https://docs.bancor.network/about-bancor-network/resources-for-daos/liquidity-mining/auto-compounding-rewards/how-to-create-an-auto-compounding-rewards-program.md)
+- [Custom Rewards Programs](https://docs.bancor.network/about-bancor-network/resources-for-daos/liquidity-mining/auto-compounding-rewards/custom-rewards-programs.md)
+- [Dual Liquidity Mining](https://docs.bancor.network/about-bancor-network/resources-for-daos/liquidity-mining/dual-liquidity-mining.md)
+- [Standard (External) Rewards](https://docs.bancor.network/about-bancor-network/resources-for-daos/liquidity-mining/standard-external-rewards.md)
+- [Security & Audits](https://docs.bancor.network/about-bancor-network/security-and-audits.md)
+- [Multisig Rights](https://docs.bancor.network/about-bancor-network/security-and-audits/multisig-rights.md)
+- [Oracles](https://docs.bancor.network/about-bancor-network/security-and-audits/oracles.md)
+- [DAO MSIG Intervention Policy](https://docs.bancor.network/about-bancor-network/security-and-audits/dao-msig-intervention-policy.md)
+- [Contracts](https://docs.bancor.network/developer-guides/contracts.md)
+- [Write Functions](https://docs.bancor.network/developer-guides/write-functions.md)
+- [Transaction Prerequisites](https://docs.bancor.network/developer-guides/write-functions/transaction-prerequisites.md): Before interacting with a blockchain smart contract, you need approval
+- [approve() / allowance()](https://docs.bancor.network/developer-guides/write-functions/transaction-prerequisites/approve-allowance.md): Give permission for a contract to access your wallet
+- [Trading](https://docs.bancor.network/developer-guides/write-functions/trading.md): 2 function that enable trade flexibility
+- [tradeBySourceAmount()](https://docs.bancor.network/developer-guides/write-functions/trading/trading-with-bancor.md): Trade an exact amount of source tokens for as many target tokens as possible
+- [tradeByTargetAmount()](https://docs.bancor.network/developer-guides/write-functions/trading/tradebytargetamount.md): Trade target tokens for the least amount of source tokens possible
+- [Trading Troubleshooting](https://docs.bancor.network/developer-guides/write-functions/trading/trading-troubleshooting.md): Common errors for trading on Bancor v3
+- [Adding Liquidity](https://docs.bancor.network/developer-guides/write-functions/adding-liquidity.md): Provide liquidity with only one asset
+- [deposit()](https://docs.bancor.network/developer-guides/write-functions/adding-liquidity/deposit.md): Deposit tokens for ownership in a liquidity pool
+- [depositFor()](https://docs.bancor.network/developer-guides/write-functions/adding-liquidity/depositfor.md): Deposit tokens on behalf of a different address
+- [Deposit Troubleshooting](https://docs.bancor.network/developer-guides/write-functions/adding-liquidity/deposit-troubleshooting.md): Common errors for adding liquidity in Bancor v3
+- [depositAndJoin()](https://docs.bancor.network/developer-guides/write-functions/adding-liquidity/depositandjoin.md): This function is in the StandardRewards.sol contract.
+- [Removing Liquidity](https://docs.bancor.network/developer-guides/write-functions/removing-liquidity.md): Initiating withdrawal and the withdrawal process
+- [Initiating Cooldown](https://docs.bancor.network/developer-guides/write-functions/removing-liquidity/initiating-cooldown.md): Stake pool tokens in withdrawal contracts with Bancor
+- [initWithdrawal()](https://docs.bancor.network/developer-guides/write-functions/removing-liquidity/initiating-cooldown/initwithdrawal.md): Functions on the PendingWithdrawals contract
+- [withdraw()](https://docs.bancor.network/developer-guides/write-functions/removing-liquidity/withdraw.md): Withdrawing funds
+- [cancelWithdrawal()](https://docs.bancor.network/developer-guides/write-functions/removing-liquidity/cancelwithdrawal.md): This function is in the BancorNetwork.sol contract
+- [Withdraw Troubleshooting](https://docs.bancor.network/developer-guides/write-functions/removing-liquidity/withdraw-troubleshooting.md): Common errors for removing liquidity in Bancor v3
+- [Flashloan](https://docs.bancor.network/developer-guides/write-functions/flashloan.md): In a single block, borrow capital and return it with an additional fee
+- [flashLoan()](https://docs.bancor.network/developer-guides/write-functions/flashloan/flashloan.md): Borrow an indicated amount from the liquidity pool
+- [Flashloan Troubleshooting](https://docs.bancor.network/developer-guides/write-functions/flashloan/flashloan-troubleshooting.md): Common errors for flash loans in Bancor v3
+- [Migrating Liquidity to v3](https://docs.bancor.network/developer-guides/write-functions/migrating-liquidity-to-v3.md)
+- [Migrating Bancor positions to v3](https://docs.bancor.network/developer-guides/write-functions/migrating-liquidity-to-v3/migrating-bancor-positions-to-v3.md): Enable the migration of user liquidity
+- [migratePositions()](https://docs.bancor.network/developer-guides/write-functions/migrating-liquidity-to-v3/migrating-bancor-positions-to-v3/migratepositions.md): Migrate Bancor v2.1 pool tokens to Bancor v3
+- [migratePoolTokens()](https://docs.bancor.network/developer-guides/write-functions/migrating-liquidity-to-v3/migrating-bancor-positions-to-v3/migratepooltokens.md): Migrate Bancor v1 pool tokens to Bancor v3
+- [Errors and Troubleshooting](https://docs.bancor.network/developer-guides/write-functions/migrating-liquidity-to-v3/migrating-bancor-positions-to-v3/errors-and-troubleshooting.md): Common errors for migrating Bancor positions from previous versions
+- [Migrating from Uniswap v2](https://docs.bancor.network/developer-guides/write-functions/migrating-liquidity-to-v3/migrating-from-uniswap-v2.md)
+- [migrateUniswapV2Position()](https://docs.bancor.network/developer-guides/write-functions/migrating-liquidity-to-v3/migrating-from-uniswap-v2/migrateuniswapv2position.md): Common errors for migrating Uniswap v2 positions to Bancor v3
+- [Migrating from Sushiswap](https://docs.bancor.network/developer-guides/write-functions/migrating-liquidity-to-v3/migrating-from-sushiswap.md)
+- [migrateSushiSwapV1Position()](https://docs.bancor.network/developer-guides/write-functions/migrating-liquidity-to-v3/migrating-from-sushiswap/migratesushiswapv1position.md): Common errors for migrating SushiSwap positions to Bancor v3
+- [Rewards](https://docs.bancor.network/developer-guides/write-functions/rewards.md)
+- [join()](https://docs.bancor.network/developer-guides/write-functions/rewards/join.md): This function is in the StandardRewards.sol contract.
+- [stakeRewards()](https://docs.bancor.network/developer-guides/write-functions/rewards/stakerewards.md): This function is in the StandardRewards.sol contract.
+- [autoProcessRewards()](https://docs.bancor.network/developer-guides/write-functions/rewards/autoprocessrewards.md): This function is in the AutoCompoundingRewards.sol contract.
+- [claimRewards()](https://docs.bancor.network/developer-guides/write-functions/rewards/claimrewards.md): This function is in the StandardRewards.sol contract.
+- [leave()](https://docs.bancor.network/developer-guides/write-functions/rewards/leave.md): This function is in the StandardRewards.sol contract.
+- [Surplus migration](https://docs.bancor.network/developer-guides/write-functions/surplus-migration.md)
+- [withdrawPOL()](https://docs.bancor.network/developer-guides/write-functions/surplus-migration/withdrawpol.md)
+- [Network Fees](https://docs.bancor.network/developer-guides/write-functions/network-fees.md)
+- [burnNetworkFees()](https://docs.bancor.network/developer-guides/write-functions/network-fees/burnnetworkfees.md)
+- [Read Functions](https://docs.bancor.network/developer-guides/read-functions.md): Use read functions to simulate an on-chain response
+- [Rewards](https://docs.bancor.network/developer-guides/read-functions/rewards.md): Reward programs supported by Bancor v3
+- [Standard rewards](https://docs.bancor.network/developer-guides/read-functions/rewards/standard-rewards.md)
+- [Identify if a program exists](https://docs.bancor.network/developer-guides/read-functions/rewards/standard-rewards/identify-if-a-program-exists.md)
+- [Auto Compounding](https://docs.bancor.network/developer-guides/read-functions/rewards/standard-rewards/identify-if-a-program-exists/auto-compounding.md): Check if a pool has a rewards program
+- [Standard Rewards](https://docs.bancor.network/developer-guides/read-functions/rewards/standard-rewards/identify-if-a-program-exists/standard-rewards.md): List reward programs for token pools
+- [programIds()](https://docs.bancor.network/developer-guides/read-functions/rewards/standard-rewards/programids.md): This function is in the StandardRewards.sol contract.
+- [programs()](https://docs.bancor.network/developer-guides/read-functions/rewards/standard-rewards/programs.md): This function is in the StandardRewards.sol contract.
+- [providerProgramIds()](https://docs.bancor.network/developer-guides/read-functions/rewards/standard-rewards/providerprogramids.md): This function is in the StandardRewards.sol contract.
+- [pendingRewards()](https://docs.bancor.network/developer-guides/read-functions/rewards/standard-rewards/pendingrewards.md): This function is in the StandardRewards.sol contract.
+- [latestProgramId()](https://docs.bancor.network/developer-guides/read-functions/rewards/standard-rewards/latestprogramid.md): This function is in the StandardRewards.sol contract.
+- [isProgramActive()](https://docs.bancor.network/developer-guides/read-functions/rewards/standard-rewards/isprogramactive.md): This function is in the StandardRewards.sol contract.
+- [isProgramEnabled()](https://docs.bancor.network/developer-guides/read-functions/rewards/standard-rewards/isprogramenabled.md): This function is in the StandardRewards.sol contract.
+- [providerStake()](https://docs.bancor.network/developer-guides/read-functions/rewards/standard-rewards/providerstake.md): This function is in the StandardRewards.sol contract.
+- [programStake()](https://docs.bancor.network/developer-guides/read-functions/rewards/standard-rewards/programstake.md): This function is in the StandardRewards.sol contract.
+- [providerRewards()](https://docs.bancor.network/developer-guides/read-functions/rewards/standard-rewards/providerrewards.md): This function is in the StandardRewards.sol contract.
+- [Auto compounding rewards](https://docs.bancor.network/developer-guides/read-functions/rewards/auto-compounding-rewards.md)
+- [bnToken balance](https://docs.bancor.network/developer-guides/read-functions/rewards/auto-compounding-rewards/bntoken-balance.md)
+- [isProgramActive()](https://docs.bancor.network/developer-guides/read-functions/rewards/auto-compounding-rewards/isprogramactive.md)
+- [isProgramPaused()](https://docs.bancor.network/developer-guides/read-functions/rewards/auto-compounding-rewards/isprogrampaused.md)
+- [pools()](https://docs.bancor.network/developer-guides/read-functions/rewards/auto-compounding-rewards/pools.md)
+- [program()](https://docs.bancor.network/developer-guides/read-functions/rewards/auto-compounding-rewards/program.md)
+- [programs()](https://docs.bancor.network/developer-guides/read-functions/rewards/auto-compounding-rewards/programs.md)
+- [Liquidity Pool Details](https://docs.bancor.network/developer-guides/read-functions/liquidity-pool-details.md): This section includes read functions that provide details about liquidity pools.
+- [liquidityPools()](https://docs.bancor.network/developer-guides/read-functions/liquidity-pool-details/liquiditypools.md): This function is in the BancorNetwork.sol contract.
+- [isPoolValid()](https://docs.bancor.network/developer-guides/read-functions/liquidity-pool-details/ispoolvalid.md): This function is in the BancorNetwork.sol contract.
+- [isPoolStable()](https://docs.bancor.network/developer-guides/read-functions/liquidity-pool-details/ispoolstable.md): This function is in the BancorNetworkInfo.sol contract.
+- [tradingLiquidity()](https://docs.bancor.network/developer-guides/read-functions/liquidity-pool-details/tradingliquidity.md): This function is in the BancorNetworkInfo.sol contract.
+- [depositingEnabled()](https://docs.bancor.network/developer-guides/read-functions/liquidity-pool-details/depositingenabled.md): This function is in the BancorNetworkInfo.sol contract.
+- [poolFundingLimit()](https://docs.bancor.network/developer-guides/read-functions/liquidity-pool-details/poolfundinglimit.md): Bancor v3 supports infinity pools and deposits
+- [Trades](https://docs.bancor.network/developer-guides/read-functions/trades.md): These functions return the expected results of a trade.
+- [tradeOutputBySourceAmount()](https://docs.bancor.network/developer-guides/read-functions/trades/tradeoutputbysourceamount.md)
+- [tradeInputByTargetAmount()](https://docs.bancor.network/developer-guides/read-functions/trades/tradeinputbytargetamount.md)
+- [tradingEnabled()](https://docs.bancor.network/developer-guides/read-functions/trades/tradingenabled.md): This function is in the BancorNetworkInfo.sol contract.
+- [tradingFeePMM()](https://docs.bancor.network/developer-guides/read-functions/trades/tradingfeepmm.md): This function is in the BancorNetworkInfo.sol contract.
+- [Withdrawals](https://docs.bancor.network/developer-guides/read-functions/withdrawals.md): This section includes withdrawal-related read functions.
+- [isReadyForWithdrawal()](https://docs.bancor.network/developer-guides/read-functions/withdrawals/isreadyforwithdrawal.md): This function is in both PendingWithdrawals.sol and BancorNetworkInfo.sol.
+- [withdrawalRequest()](https://docs.bancor.network/developer-guides/read-functions/withdrawals/withdrawalrequest.md): This function is in the PendingWithdrawals.sol contract.
+- [withdrawalAmounts()](https://docs.bancor.network/developer-guides/read-functions/withdrawals/withdrawalamounts.md): This function is in the BancorNetworkInfo.sol contract.
+- [withdrawalRequestIds()](https://docs.bancor.network/developer-guides/read-functions/withdrawals/withdrawalrequestids.md): This function is in the PendingWithdrawals.sol contract.
+- [withdrawalRequestCount()](https://docs.bancor.network/developer-guides/read-functions/withdrawals/withdrawalrequestcount.md): This function is in the PendingWithdrawals.sol contract.
+- [lockDuration()](https://docs.bancor.network/developer-guides/read-functions/withdrawals/lockduration.md): This function is in the PendingWithdrawals.sol contract.
+- [Pool Token Information](https://docs.bancor.network/developer-guides/read-functions/pool-token-information.md): This section includes read functions that return information about pool tokens.
+- [poolToken()](https://docs.bancor.network/developer-guides/read-functions/pool-token-information/pooltoken.md): This function is found in the BancorNetworkInfo.sol contract.
+- [collectionByPool()](https://docs.bancor.network/developer-guides/read-functions/pool-token-information/collectionbypool.md): This function is found in the BancorNetworkInfo.sol contract.
+- [poolTokenToUnderlying()](https://docs.bancor.network/developer-guides/read-functions/pool-token-information/pooltokentounderlying.md)
+- [underlyingToPoolToken()](https://docs.bancor.network/developer-guides/read-functions/pool-token-information/underlyingtopooltoken.md): This function is found in the BancorNetworkInfo.sol contract.
+- [Vortex](https://docs.bancor.network/developer-guides/read-functions/vortex.md): This section includes read functions related to the Bancor Vortex.
+- [pendingNetworkFeeAmount()](https://docs.bancor.network/developer-guides/read-functions/vortex/pendingnetworkfeeamount.md): This function is in the BancorNetwork.sol contract.
+- [minNetworkFeeBurn()](https://docs.bancor.network/developer-guides/read-functions/vortex/minnetworkfeeburn.md)
+- [Surplus whitelist](https://docs.bancor.network/developer-guides/read-functions/surplus-whitelist.md)
+- [protectedTokenWhitelist()](https://docs.bancor.network/developer-guides/read-functions/surplus-whitelist/protectedtokenwhitelist.md)
+- [Data & Events](https://docs.bancor.network/developer-guides/data-and-events.md)
+- [General Data](https://docs.bancor.network/developer-guides/data-and-events/general-data.md): Using data to trigger events from a smart contract
+- [contextId](https://docs.bancor.network/developer-guides/data-and-events/general-data/contextid.md): The unique value contexid logs data events
+- [Trading Data](https://docs.bancor.network/developer-guides/data-and-events/trading-data.md): The event to track trades on the Bancor Network
+- [event TokensTraded()](https://docs.bancor.network/developer-guides/data-and-events/trading-data/event-tokenstraded.md): This function fires an event after a token is successfully swapped
+- [Liquidity Data](https://docs.bancor.network/developer-guides/data-and-events/liquidity-data.md): The events to track liquidity data
+- [TotalLiquidityUpdated()](https://docs.bancor.network/developer-guides/data-and-events/liquidity-data/totalliquidityupdated.md)
+- [TradingLiquidityUpdated()](https://docs.bancor.network/developer-guides/data-and-events/liquidity-data/tradingliquidityupdated.md)
+- [TokensDeposited()](https://docs.bancor.network/developer-guides/data-and-events/liquidity-data/tokensdeposited.md)
+- [TokensWithdrawn()](https://docs.bancor.network/developer-guides/data-and-events/liquidity-data/tokenswithdrawn.md)
+- [WithdrawalInitiated()](https://docs.bancor.network/developer-guides/data-and-events/liquidity-data/withdrawalinitiated.md)
+- [WithdrawalCancelled()](https://docs.bancor.network/developer-guides/data-and-events/liquidity-data/withdrawalcancelled.md)
+- [WithdrawalCompleted()](https://docs.bancor.network/developer-guides/data-and-events/liquidity-data/withdrawalcompleted.md)
+- [LockDurationUpdated()](https://docs.bancor.network/developer-guides/data-and-events/liquidity-data/lockdurationupdated.md)
+- [Cross AMM Migration Data](https://docs.bancor.network/developer-guides/data-and-events/liquidity-data/cross-amm-migration-data.md)
+- [UniswapV2PositionMigrated()](https://docs.bancor.network/developer-guides/data-and-events/liquidity-data/cross-amm-migration-data/uniswapv2positionmigrated.md)
+- [SushiswapV1PositionMigrated()](https://docs.bancor.network/developer-guides/data-and-events/liquidity-data/cross-amm-migration-data/sushiswapv1positionmigrated.md)
+- [Flashloan Data](https://docs.bancor.network/developer-guides/data-and-events/flashloan-data.md)
+- [FlashLoanCompleted()](https://docs.bancor.network/developer-guides/data-and-events/flashloan-data/flashloancompleted.md)
+- [FlashLoanFeePPMUpdated()](https://docs.bancor.network/developer-guides/data-and-events/flashloan-data/flashloanfeeppmupdated.md)
+- [Rewards](https://docs.bancor.network/developer-guides/data-and-events/rewards.md): Events & data points related to rewards
+- [Staking and Unstaking](https://docs.bancor.network/developer-guides/data-and-events/rewards/staking-and-unstaking.md)
+- [Event ProviderJoined()](https://docs.bancor.network/developer-guides/data-and-events/rewards/staking-and-unstaking/event-providerjoined.md)
+- [Event ProviderLeft()](https://docs.bancor.network/developer-guides/data-and-events/rewards/staking-and-unstaking/event-providerleft.md)
+- [Claiming and Restaking Rewards](https://docs.bancor.network/developer-guides/data-and-events/rewards/claiming-and-restaking-rewards.md)
+- [Event RewardsClaimed()](https://docs.bancor.network/developer-guides/data-and-events/rewards/claiming-and-restaking-rewards/event-rewardsclaimed.md)
+- [Event RewardsStaked()](https://docs.bancor.network/developer-guides/data-and-events/rewards/claiming-and-restaking-rewards/event-rewardsstaked.md)
+- [Bancor Vortex Burner](https://docs.bancor.network/guides/triggering-the-bancor-vortex-burner.md): How to trigger a vBNT burn via the VortexBurner contract
+- [Bancor Etherscan Guide](https://docs.bancor.network/guides/bancor-etherscan-guide.md)
+- [Etherscan Basics](https://docs.bancor.network/guides/bancor-etherscan-guide/etherscan-basics.md)
+- [Deposit](https://docs.bancor.network/guides/bancor-etherscan-guide/deposit.md)
+- [Deposit and Join](https://docs.bancor.network/guides/bancor-etherscan-guide/deposit-and-join.md)
+- [Rewards: Joining Standard Rewards](https://docs.bancor.network/guides/bancor-etherscan-guide/rewards-joining-standard-rewards.md)
+- [Rewards: Stake & Claim](https://docs.bancor.network/guides/bancor-etherscan-guide/rewards-stake-and-claim.md)
+- [Rewards: Leaving the Rewards Contract](https://docs.bancor.network/guides/bancor-etherscan-guide/rewards-leaving-the-rewards-contract.md)
+- [Withdrawing Tokens](https://docs.bancor.network/guides/bancor-etherscan-guide/withdrawing-tokens.md)
+- [Initiating the Withdrawal](https://docs.bancor.network/guides/bancor-etherscan-guide/withdrawing-tokens/initiating-the-withdrawal.md)
+- [Completing the Withdrawal](https://docs.bancor.network/guides/bancor-etherscan-guide/withdrawing-tokens/completing-the-withdrawal.md)
+- [Migrating V2.1 Positions](https://docs.bancor.network/guides/bancor-etherscan-guide/migrating-v2.1-positions.md)
+- [Rewards: Auto Compounding Rewards Distribution](https://docs.bancor.network/guides/bancor-etherscan-guide/rewards-auto-compounding-rewards-distribution.md)
+- [REST API](https://docs.bancor.network/guides/rest-api.md)
+- [API Reference](https://docs.bancor.network/guides/rest-api/api-reference.md)
+- [DLT Identifier](https://docs.bancor.network/guides/rest-api/dlt-identifier.md)
