@@ -22,7 +22,7 @@ specificationVersion: '0.20'
 
 created: '2026-09-27'
 
-modified: '2026-09-27'
+modified: '2026-10-06'
 
 x-docs-platform: gitbook
 x-docs-platform-confidence: medium
@@ -41,6 +41,8 @@ maintainers:
   email: info@apis.io
 
 common:
+- url: https://blog.bancor.network/feed
+  type: BlogRSS
 - type: Conventions
   url: conventions/bancorprotocol-conventions.yml
 - type: LLMsTxt
